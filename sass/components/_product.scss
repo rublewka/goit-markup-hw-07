@@ -1,0 +1,41 @@
+@import '../utils/variables.scss';
+.product {
+    padding-bottom: 94px;
+}
+
+.product__list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.product__item:not(:nth-last-child(1)) {
+    margin-right: 30px;
+}
+
+.product__card {
+    position: relative;
+    width: 370px;
+    height: 294px;
+}
+
+.product__image {
+    display: block;
+}
+
+.product__caption {
+    position: absolute;
+    bottom: 0;
+    padding: 27px 0;
+
+    width: 100%;
+    margin: 0;
+
+    color: $alternative-color;
+    background: rgba(47, 48, 58, 0.8);
+
+    font-weight: $sub-title_weight;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+}

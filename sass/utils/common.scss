@@ -1,0 +1,134 @@
+@import './variables.scss';
+body {   
+    font-family: $main-font;  
+    font-style: $text-weight;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: $alternative-color;
+    color: $text-color;
+}  
+
+.list {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    cursor: pointer;
+
+    min-width: 200px;
+    min-height: 50px;
+
+    border: none;
+    border-radius: 4px;
+
+    font-family: $main-font;
+    font-weight: $btn-weight;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: $alternative-color;
+    background: $acent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color $hover-time $hover-function,
+        box-shadow $hover-time $hover-function;
+}
+
+.button:hover,
+.button:focus {
+    background-color: $button-hover-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+};
+
+.section-title {
+    margin: 0;
+    padding: 0;
+
+    color: $title-color;
+
+    font-style: $title-color;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+};
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+// Список соц сетей
+@mixin soc-med-list(
+    $mt: 0,
+    $bgk: inherit,
+    $mr: 32px,
+    $ico-fill:$ico-color
+    ) { 
+.soc-med-list {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    padding: 0;
+    margin-bottom: 30px;
+    margin-top: $mt;
+}
+
+.soc-med-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color:$bgk;
+
+    transition: background-color $hover-time $hover-function;
+
+    &:hover,
+    &:focus {
+        background-color: $acent-color;
+    }
+}
+
+.soc-med-list__item {
+    margin-right: 10px;
+    &:nth-last-child(1) {
+        margin-right: $mr;
+    }
+}
+
+
+.soc-med-list__ico {
+    fill: $ico-fill;
+
+    transition: fill $hover-time $hover-function;
+
+    .soc-med-list__link:hover &,
+    .soc-med-list__link:focus & {
+        fill: $alternative-color;
+    }
+}
+}

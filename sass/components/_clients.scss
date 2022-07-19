@@ -1,0 +1,49 @@
+@import '../utils/variables.scss';
+.clients {
+    padding: 94px 0;
+}
+
+.clients__list {
+    list-style: none;
+    display: flex;
+
+    margin-top: 50px;
+}
+
+.clients__item {
+    width: calc((100% - 150px)/5);
+    height: 92px;
+
+    &:not(:nth-last-child(1)) {
+            margin-right: 30px;
+        }
+}
+
+.clients__link {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid $ico-color;
+    border-radius: 4px;
+
+    transition: border-color $hover-time $hover-function;
+    
+    .clients__item:hover &,
+    .clients__item:focus & {
+        border-color: $acent-color;
+    }
+}
+
+.clients__ico {
+    fill: $ico-color;
+
+    transition: fill $hover-time $hover-function;
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: $acent-color;
+    }
+}

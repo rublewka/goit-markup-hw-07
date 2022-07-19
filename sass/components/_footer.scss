@@ -1,0 +1,123 @@
+@import '../utils/variables.scss';
+.footer {
+    background-color: $footer-color;
+    padding-bottom: 60px;
+
+    & .container {
+        display: flex;
+        justify-content: start;
+    }
+}
+
+.footer__column {
+    &:nth-child(1) {
+        margin-right: 70px;
+    }
+    &:nth-child(2) {
+        margin-right: 93px;
+    }
+}
+
+.footer-logo {
+    margin-top: 60px;
+    color: $alternative-color;
+}
+
+.address {
+    margin-top: 20px;
+}
+
+.address__item {
+    margin-top: 10px;
+}
+
+.address__link {
+    color: rgba(255, 255, 255, 0.6);
+
+    font-style: normal;
+    font-weight: $text-weight;
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+
+    &:hover,
+    &:focus {
+        color: $acent-color;
+    }
+}
+
+.address__link-located {
+    color: $alternative-color;
+}
+
+
+/* Соц сети */
+
+
+.footer__title {
+    margin-top: 72px;
+
+    color: $alternative-color;
+    font-weight: $sub-title_weight;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: $alternative-color;
+}
+.footer{
+    @include soc-med-list (
+        20px,
+        rgba(255, 255, 255, 0.1),
+        0,
+        $alternative-color);
+
+}
+
+/* Форма отправки */
+.sign-up__label {
+    display: inline-block;
+
+    margin-top: 72px;
+
+    font-weight: $btn-weight;
+    text-transform: uppercase;
+
+    color: $alternative-color;
+}
+
+.sign-up__input {
+    display: block;
+
+    margin-top: 20px;
+    margin-right: 12px;
+    padding: 16px 15px;
+
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    background-color: $footer-color;
+    color: $alternative-color;
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.sign-up__button {
+    display: inline-block;
+    position: relative;
+
+    padding: 10px 29px;
+
+    text-align: start;
+    vertical-align: bottom;
+}
+
+.sign-up__ico {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+}
