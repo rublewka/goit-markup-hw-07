@@ -1,38 +1,36 @@
 @import '../utils/variables.scss';
 .hero {
-    max-width: 1600px;
-    margin: 0 auto;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero__thumb {
-    padding: 200px 15px 200px 15px;
-    background-color: #C4C4C4;
-    background-image: radial-gradient(ellipse at center,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url("../images/hero-bkg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  padding: 200px 15px 200px 15px;
+  background-color: #c4c4c4;
+  background-image: radial-gradient(ellipse at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero-bkg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
-    min-height: 600px;
-    text-align: center;
+  min-height: 600px;
+  text-align: center;
 }
 
 .hero__title {
-    margin: 0;
-    color: $alternative-color;
+  margin: 0;
+  color: $alternative-color;
 
-    font-family: $main-font;
-    font-weight: $hero-weight;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-
+  font-family: $main-font;
+  font-weight: $hero-weight;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero__button {
-    padding: 10px 32px;
-    margin-top: 30px;
+  padding: 10px 32px;
+  margin-top: 30px;
 }

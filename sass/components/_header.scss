@@ -1,12 +1,12 @@
 @import '../utils/variables.scss';
 .page-header {
-  border-bottom: 1px solid #ECECEC;
-    .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            min-height: 80px;
-        }
+  border-bottom: 1px solid #ececec;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+  }
 }
 
 .nav {
@@ -44,8 +44,8 @@
 }
 
 %hover-link {
-    color: $acent-color;
-    fill: $acent-color;
+  color: $acent-color;
+  fill: $acent-color;
 }
 
 .nav__link {
@@ -60,7 +60,8 @@
   letter-spacing: 0.02em;
 
   transition: color $hover-time $hover-function;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     @extend %hover-link;
   }
 }
@@ -69,18 +70,18 @@
 .active {
   color: $acent-color;
   &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
-        display: block;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
 
-        background-color: $acent-color;
-    }
+    background-color: $acent-color;
+  }
 }
 /* Контакты шапки */
 
@@ -98,7 +99,8 @@
   letter-spacing: 0.02em;
 
   transition: color $hover-time $hover-function;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     @extend %hover-link;
   }
 }
